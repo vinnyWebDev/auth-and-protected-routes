@@ -2,6 +2,7 @@ import './App.css';
 import Home from "./Routes/Home"
 import Signin from "./Routes/Signin"
 import Signup from "./Routes/Signup"
+import Blog from "./Routes/Blog"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AuthContext } from './Context/AuthContext';
 import { Protected } from './Routes/Protected';
@@ -19,6 +20,10 @@ function App() {
   {
     path: "/signup",
     element: <Signup></Signup>
+  },
+  {
+    path: "/blog",
+    element: <Protected><Blog></Blog></Protected>
   }])
 
   return (
