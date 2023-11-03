@@ -7,6 +7,7 @@ import Navigation from './Components/Navigation';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AuthContext } from './Context/AuthContext';
 import { Protected } from './Routes/Protected';
+import ResetPassword from './Routes/ResetPassword';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
   {
     path: "/signup",
     element: <Signup></Signup>
+  },
+  {
+    path: "/resetpassword",
+    element: <ResetPassword></ResetPassword>
   },
   {
     path: "/blog",

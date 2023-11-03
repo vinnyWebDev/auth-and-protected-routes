@@ -25,11 +25,11 @@ const Signup = () => {
     return (
         <div>
             <h1>Signup</h1>
-            <fom action="">
+            <form action="">
                 <input onChange={(e) => setEmail(e.target.value)} type='text' placeholder='Email'></input>
                 <input onChange={(e) => setPassword(e.target.value)} type='text' placeholder='Password'></input>
                 <button onClick={(e) => { handleSignUp(e) }}>Sign Up</button>
-            </fom>
+            </form>
         </div>
     )
 }
