@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import fbconfig from './fbconfig';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+
 //initialises firwbase app instance
 import { initializeApp } from "firebase/app"
 
